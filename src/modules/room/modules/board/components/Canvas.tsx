@@ -84,12 +84,12 @@ const Canvas = () => {
           e.preventDefault();
           e.stopPropagation();
         }}
-        // onMouseDown={(e) => {
-        //   if (e.button === 2) {
-        //     setDragging(true);
-        //     dragControls.start(e);
-        //   } else handleStartDrawing(e.clientX, e.clientY);
-        // }}
+        onMouseDown={(e) => {
+          if (e.button === 2) {
+            setDragging(true);
+            dragControls.start(e);
+          } else handleStartDrawing(e.clientX, e.clientY);
+        }}
         onMouseUp={(e) => {
           if (e.button === 2) setDragging(false);
           else handleEndDrawing();

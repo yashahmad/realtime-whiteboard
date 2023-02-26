@@ -6,7 +6,7 @@ export const useViewportSize = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            setWidth(window.innerHeight);
+            setWidth(window.innerWidth);
             setHeight(window.innerHeight);
         };
 
